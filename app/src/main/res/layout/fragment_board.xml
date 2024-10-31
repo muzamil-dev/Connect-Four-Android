@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFcc33"
+    tools:context=".BoardFragment">
+
+
+    <!--    invinsible button-->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="8dp"
+        android:text="Start"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:contentDescription="button" />
+
+<!--    invincible text-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="60dp"
+        android:text="Connect Four"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="text" />
+
+<!--    The grid layout of 42 buttons -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="425dp"
+        android:layout_height="425dp"
+        android:background="#134B5A"
+        android:columnCount="6"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:rowCount="7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- 42 Buttons for the Connect Four Board -->
+        <!--        these buttons just repate 42 times nothing special-->
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 1" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 2" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 3" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 4" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 5" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 6" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 7" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 8" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 9" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 10" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 11" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 12" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 13" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 14" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 15" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 16" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 17" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 18" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 19" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 20" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 21" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 22" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 23" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 24" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 25" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 26" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 27" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 28" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 29" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 30" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 31" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 32" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 33" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 34" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 35" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 36" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 37" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 38" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 39" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 40" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 41" />
+
+        <Button
+            style="@style/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/circle_white"
+            android:contentDescription="Cell 42" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

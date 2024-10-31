@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Menu item for Connect Four -->
+    <item
+        android:id="@+id/boardFragment"
+        android:icon="@drawable/ic_connect_four"
+        android:title="Connect Four" />
+
+    <!-- Menu item for Options -->
+    <item
+        android:id="@+id/gameOptionsFragment"
+        android:icon="@drawable/ic_options"
+        android:title="Options" />
+
+</menu>
