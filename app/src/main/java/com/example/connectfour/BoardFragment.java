@@ -16,12 +16,11 @@ import androidx.fragment.app.Fragment;
 
 public class BoardFragment extends Fragment {
 
-    // Step 3: Define the required members
     private static final String GAME_STATE = "gameState"; // Constant for game state key
     private ConnectFourGame mGame; // Game logic instance
     private GridLayout mGrid; // Reference to the GridLayout
 
-    // Step 4: Replace onCreate with onCreateView
+    // Replace onCreate with onCreateView
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // Inflate the fragment_board layout
@@ -31,7 +30,7 @@ public class BoardFragment extends Fragment {
         mGame = new ConnectFourGame();
         mGrid = view.findViewById(R.id.gridLayout);
 
-        // Step 1: Start a new game or set saved state
+        // Start a new game or set saved state
         if (savedInstanceState == null) {
             startGame();
         } else {
@@ -40,7 +39,7 @@ public class BoardFragment extends Fragment {
             setDisc();
         }
 
-        // Step 2: Set OnClickListener for each button in GridLayout
+        // Set OnClickListener for each button in GridLayout
         for (int i = 0; i < mGrid.getChildCount(); i++) {
             View child = mGrid.getChildAt(i);
             if (child instanceof Button) {
@@ -51,7 +50,7 @@ public class BoardFragment extends Fragment {
         return view;
     }
 
-    // Step 5: Implement onButtonClick
+    // Implement onButtonClick
     private void onButtonClick(View view) {
         // Find button's position (row and column)
         int buttonIndex = mGrid.indexOfChild(view);
@@ -70,13 +69,13 @@ public class BoardFragment extends Fragment {
         }
     }
 
-    // Step 3: Write startGame method
+    // Write startGame method
     private void startGame() {
         mGame.newGame();
         setDisc();
     }
 
-    // Step 4: Write setDisc method
+    // Write setDisc method
     private void setDisc() {
         for (int buttonIndex = 0; buttonIndex < mGrid.getChildCount(); buttonIndex++) {
             Button gridButton = (Button) mGrid.getChildAt(buttonIndex);
@@ -102,7 +101,7 @@ public class BoardFragment extends Fragment {
         }
     }
 
-    // Step 6: Override onSaveInstanceState to save the game state
+    // Override onSaveInstanceState to save the game state
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
