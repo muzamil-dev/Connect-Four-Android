@@ -1,7 +1,7 @@
 package com.example.connectfour;
 
 public class ConnectFourGame {
-    // Step 1: Add constants
+    // Add constants
     public static final int ROW = 7;
     public static final int COL = 6;
     public static final int EMPTY = 0;
@@ -9,7 +9,7 @@ public class ConnectFourGame {
     public static final int RED = 2;
     public static final int DISCS = 42;
 
-    // Step 2: Add member variable
+    // Add member variable
     private int player = BLUE;
     private int[][] board;
 
